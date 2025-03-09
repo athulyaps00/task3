@@ -1,0 +1,99 @@
+/* Custom Styles for Profile Card */
+body {
+  background-color: #b0dbec; /* Background color for the entire page */
+}
+
+.profile-card {
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 100px; /* Adds margin to the top of the card */
+  background-color: #fff; /* Background color of the outer card */
+}
+
+/* Background Image of Card Header */
+.profile-card .profile-header {
+  background-image: url('bimg.jpg'); /* Background image for header */
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Profile Image (Half in the background, half below the background) */
+.profile-card .profile-image {
+  width: 160px; /* Full size of the circle */
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 70px; /* Position the image inside the card header */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits perfectly inside the circle */
+}
+
+/* Card Body */
+.profile-card .card-body {
+  text-align: center;
+  padding-top: 80px; /* Create space for the floating image */
+  padding: 15px;
+  background-color: #fff;
+}
+
+.profile-card .card-title {
+  margin-bottom: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.profile-card .card-text {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+/* Styling for the follower and following counts */
+.follower-count {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Button Styling */
+.profile-card .btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 30px;
+  text-decoration:none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.profile-card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Row for follower/following count */
+.row-count {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.column-count{
+  display: flex;
+  -webkit-text-fill-color: rgba(77, 214, 64, 0.712);
+  margin-top: 20px;
+
+}
